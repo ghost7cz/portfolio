@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafael Duarte — Personal Trainer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header" id="topo">
+  <div class="wrap header-inner">
+    <a href="#topo" class="logo">Rafael Duarte<span>Personal Trainer</span></a>
+
+    <nav class="nav" id="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#metodo">Método</a>
+      <a href="#planos">Planos</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato" class="nav-cta">Marcar avaliação</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <h1>Treino feito pra sua rotina, não o contrário.</h1>
+        <p class="hero-sub">Acompanhamento individual, presencial ou online, com plano ajustado toda semana conforme sua resposta ao treino  não uma planilha genérica de internet.</p>
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Agendar avaliação gratuita</a>
+          <a href="#planos" class="btn btn-ghost">Ver planos</a>
+        </div>
+
+        <div class="stats" id="stats">
+          <div class="stat">
+            <span class="stat-num" data-count="120">0</span>
+            <span class="stat-label">alunos atendidos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="8">0</span>
+            <span class="stat-label">anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="94">0</span>
+            <span class="stat-label">% seguem após 6 meses</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="personal-img">
+        <img src="img/personal1.png" alt="Rafael Duarte - Personal Trainer">
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="sobre" id="sobre">
+    <div class="wrap sobre-inner">
+      <div class="sobre-visual" aria-hidden="true">
+        <div class="photo-block">
+          <img src="img/personal2.png" alt="Rafael Duarte - Personal Trainer">
+        </div>
+      </div>
+      <div class="sobre-text">
+        <h2>Quem vai te acompanhar</h2>
+        <p>Sou Rafael Duarte, educador físico (CREF 000000-G/BA), especializado em treinamento de força e emagrecimento. Nos últimos 8 anos ajudei alunos de 18 a 65 anos a sair do zero, voltar depois de lesão ou romper platôs que a academia sozinha não resolvia.</p>
+        <p>Trabalho com poucos alunos por vez de propósito: isso permite ajustar carga, técnica e frequência toda semana, em vez de entregar um programa fixo de 12 semanas e torcer para funcionar.</p>
+        <ul class="badges">
+          <li>Treinamento de força</li>
+          <li>Emagrecimento</li>
+          <li>Reabilitação pós-lesão</li>
+          <li>Terceira idade</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="metodo" id="metodo">
+    <div class="wrap">
+      <h2>Como funciona o acompanhamento</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-n">1</span>
+          <h3>Avaliação inicial</h3>
+          <p>Conversa sobre objetivo, histórico de lesões e rotina, além de testes físicos básicos para saber de onde você está partindo.</p>
+        </li>
+        <li>
+          <span class="step-n">2</span>
+          <h3>Plano personalizado</h3>
+          <p>Monto o treino considerando os dias e horários que você realmente tem disponíveis — não um plano ideal que você não vai seguir.</p>
+        </li>
+        <li>
+          <span class="step-n">3</span>
+          <h3>Acompanhamento semanal</h3>
+          <p>Ajusto carga, volume e exercícios a cada semana com base no seu retorno, presencial ou por mensagem.</p>
+        </li>
+        <li>
+          <span class="step-n">4</span>
+          <h3>Revisão de resultado</h3>
+          <p>A cada 6 a 8 semanas, revisamos juntos o que mudou e redefinimos a meta seguinte.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  
+  <section class="planos" id="planos">
+    <div class="wrap">
+      <h2>Planos de acompanhamento</h2>
+      <div class="plano-grid">
+
+        <div class="plano-card">
+          <h3>Avulso</h3>
+          <p class="plano-preco">R$ 90<span>/sessão</span></p>
+          <ul>
+            <li>Sessão presencial única</li>
+            <li>Ideal para experimentar</li>
+            <li>Sem plano de treino contínuo</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost">Escolher plano</a>
+        </div>
+
+        <div class="plano-card destaque">
+          <p class="plano-tag">Mais escolhido</p>
+          <h3>Mensal</h3>
+          <p class="plano-preco">R$ 320<span>/mês</span></p>
+          <ul>
+            <li>Plano de treino personalizado</li>
+            <li>2 sessões presenciais por semana</li>
+            <li>Ajustes semanais via WhatsApp</li>
+            <li>Revisão ao fim do mês</li>
+          </ul>
+          <a href="#contato" class="btn btn-primary">Escolher plano</a>
+        </div>
+
+        <div class="plano-card">
+          <h3>Trimestral</h3>
+          <p class="plano-preco">R$ 870<span>/trimestre</span></p>
+          <ul>
+            <li>Tudo do plano mensal</li>
+            <li>Revisão de treino a cada 6 semanas</li>
+            <li>Prioridade de horário</li>
+          </ul>
+          <a href="#contato" class="btn btn-ghost">Escolher plano</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="depoimentos" id="depoimentos">
+    <div class="wrap">
+      <h2>Quem já treinou comigo</h2>
+      <div class="depoimento-slider" id="slider">
+        <div class="depoimento-track" id="sliderTrack">
+          <blockquote class="depoimento">
+            <p>Emagreci 11kg em 5 meses sem passar fome, só ajustando o treino de acordo com a minha semana real.</p>
+            <cite>Camila S., 34 anos</cite>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p>Voltei a treinar depois de uma cirurgia no joelho e fui acompanhado de perto em cada etapa, sem pressa e sem medo.</p>
+            <cite>Marcos T., 52 anos</cite>
+          </blockquote>
+          <blockquote class="depoimento">
+            <p>O que mudou pra mim foi ter alguém revendo o plano toda semana. Antes eu travava o progresso e nem sabia por quê.</p>
+            <cite>Beatriz L., 27 anos</cite>
+          </blockquote>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="contato" id="contato">
+    <div class="wrap contato-inner">
+      <div class="contato-info">
+        <h2>Vamos montar seu plano?</h2>
+        <p>Preencha o formulário e eu retorno em até 24h para marcar a avaliação gratuita — presencial em Vitória da Conquista ou online.</p>
+        <a href="https://wa.me/5577999999999" class="btn btn-whats" target="_blank" rel="noopener">Falar direto no WhatsApp</a>
+      </div>
+
+      <form class="form" id="contatoForm" novalidate>
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" autocomplete="name">
+          <span class="error" id="erro-nome"></span>
+        </div>
+
+        <div class="field">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel">
+          <span class="error" id="erro-telefone"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email">
+          <span class="error" id="erro-email"></span>
+        </div>
+
+        <div class="field">
+          <label for="objetivo">Objetivo principal</label>
+          <select id="objetivo" name="objetivo">
+            <option value="">Selecione</option>
+            <option value="emagrecimento">Emagrecimento</option>
+            <option value="forca">Ganho de força / massa</option>
+            <option value="reabilitacao">Reabilitação pós-lesão</option>
+            <option value="condicionamento">Condicionamento geral</option>
+          </select>
+          <span class="error" id="erro-objetivo"></span>
+        </div>
+
+        <div class="field field-full">
+          <label for="mensagem">Mensagem (opcional)</label>
+          <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary field-full">Solicitar avaliação gratuita</button>
+        <p class="form-success" id="formSuccess" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>Rafael Duarte   Personal Trainer · CREF 000000-G/BA</p>
+    <p>Vitória da Conquista, BA · (77) 99999-9999</p>
+    <p>A Pagina e Apenas uma demonstração de design.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

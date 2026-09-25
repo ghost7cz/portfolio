@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Burger House — cardápio digital demonstrativo.">
+  <title>Burger House | Cardápio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <a class="logo" href="#inicio"><span>BURGER</span><b>HOUSE</b></a>
+    <div class="links">
+      <a href="#cardapio">Cardápio</a><a href="#sobre">A casa</a><a href="#contato">Contato</a>
+    </div>
+    <button class="cart-button" id="openCart">🛒 <span>Meu pedido</span><b id="cartCount">0</b></button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-noise"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">BURGERS • FRITAS • MILKSHAKES</p>
+    <h1>O BURGER<br><span>DO SEU JEITO.</span></h1>
+    <p>Hambúrguer artesanal, ingredientes de verdade e aquele sabor que pede mais uma mordida.</p>
+    <a class="btn" href="#cardapio">Ver cardápio ↓</a>
+  </div>
+  <div class="hero-badge"><strong>100%</strong><span>ARTESANAL</span></div>
+</section>
+<div class="hamburger"> <img src="hamburger.png" alt="Hamburger"></div>
+<section class="menu-section" id="cardapio">
+  <div class="container">
+    <div class="section-top">
+      <div><p class="eyebrow">CARDÁPIO DIGITAL</p><h2>ESCOLHA<br><span>SEU FAVORITO.</span></h2></div>
+      <p class="demo-label">SITE DEMONSTRATIVO<br>Preços e produtos fictícios.</p>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-category="todos">Todos</button>
+      <button class="filter" data-category="burgers">Burgers</button>
+      <button class="filter" data-category="combos">Combos</button>
+      <button class="filter" data-category="acompanhamentos">Acompanhamentos</button>
+      <button class="filter" data-category="bebidas">Bebidas</button>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="container about-grid">
+    <div><p class="eyebrow">A CASA</p><h2>COMIDA BOA.<br><span>SEM FRESCURA.</span></h2></div>
+    <div><p>Na Burger House, a ideia é simples: pão macio, carne suculenta, molho caprichado e ingredientes que fazem diferença.</p><p>Este projeto é uma demonstração de cardápio digital e fluxo de pedidos para uma hamburgueria.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="container contact-grid">
+    <div><p class="eyebrow">BURGER HOUSE</p><h2>SEU PEDIDO,<br><span>SEU MOMENTO.</span></h2></div>
+    <div class="contact-info"><p><b>📍 Localização</b><br>Vitória da Conquista — BA</p><p><b>🕐 Horário</b><br>Terça a domingo • 18h às 23h</p><p><b>📱 WhatsApp</b><br>(77) 99999-9999</p><button class="btn" id="contactOrder">Montar pedido →</button></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><span>BURGER HOUSE</span><small>Site demonstrativo • Cardápio digital</small></div></footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart" id="cart">
+  <div class="cart-head"><div><span>SEU PEDIDO</span><h3>MEU CARRINHO</h3></div><button id="closeCart">×</button></div>
+  <div class="cart-items" id="cartItems"><div class="empty">Seu carrinho está vazio.<br><small>Escolha um burger para começar.</small></div></div>
+  <div class="cart-footer">
+    <div class="subtotal"><span>Subtotal</span><strong id="cartTotal">R$ 0,00</strong></div>
+    <label>Observação<textarea id="orderNote" rows="2" placeholder="Ex.: sem cebola, ponto da carne..."></textarea></label>
+    <button class="btn checkout" id="checkout">Finalizar pedido <span>→</span></button>
+    <small class="demo-warning">Demonstração: nenhum pedido real será enviado.</small>
+  </div>
+</aside>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

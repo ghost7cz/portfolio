@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKLINE BARBER — Barbearia</title>
+  <meta name="description" content="Site demonstrativo de uma barbearia moderna em Vitória da Conquista.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="inicio">
+    <nav class="nav container">
+      <a class="logo" href="#inicio"><span>BLACK</span>LINE<span class="dot">.</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#agenda">Agendar</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <a class="btn btn-small" href="#agenda">Agendar horário</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">VITÓRIA DA CONQUISTA • BA</p>
+        <h1>SEU ESTILO.<br><span>NOSSA RÉGUA.</span></h1>
+        <p class="hero-text">Cortes precisos, barba alinhada e aquele acabamento que muda tudo.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#agenda">Marcar horário <span>→</span></a>
+          <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+        </div>
+        <div class="hero-info">
+          <div><strong>SEG — SÁB</strong><small>09:00 — 20:00</small></div>
+          <div><strong>ATENDIMENTO</strong><small>Com hora marcada</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">SOBRE A BLACKLINE</p>
+          <h2>MAIS QUE UM CORTE.<br><span>UMA PRESENÇA.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>A BLACKLINE é uma barbearia criada para quem gosta de visual limpo, atendimento direto e acabamento sem improviso.</p>
+          <p>Nosso espaço combina estética urbana, conforto e técnicas atuais para entregar um resultado que combina com você.</p>
+          <div class="stats">
+            <div><strong>100%</strong><span>Foco no detalhe</span></div>
+            <div><strong>30+</strong><span>Estilos possíveis</span></div>
+            <div><strong>09h</strong><span>Início dos atendimentos</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SERVIÇOS</p>
+            <h2>NA RÉGUA.</h2>
+          </div>
+          <p class="muted">Valores demonstrativos inspirados em preços publicados por barbearias de Vitória da Conquista.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="number">01</span><div class="service-icon">✂</div>
+            <h3>Corte</h3><p>Degradê, social, navalhado ou o estilo que combina com você.</p>
+            <strong>R$ 30</strong><small>≈ média local</small>
+            <button class="choose-service" data-service="Corte" data-price="30">Selecionar</button>
+          </article>
+          <article class="service-card featured">
+            <span class="number">02</span><div class="service-icon">◒</div>
+            <h3>Barba</h3><p>Alinhamento, desenho e acabamento para uma barba bem definida.</p>
+            <strong>R$ 25</strong><small>≈ média local</small>
+            <button class="choose-service" data-service="Barba" data-price="25">Selecionar</button>
+          </article>
+          <article class="service-card">
+            <span class="number">03</span><div class="service-icon">⌁</div>
+            <h3>Sobrancelha</h3><p>Design e limpeza para completar o visual com discrição.</p>
+            <strong>R$ 10</strong><small>≈ média local</small>
+            <button class="choose-service" data-service="Sobrancelha" data-price="10">Selecionar</button>
+          </article>
+          <article class="service-card">
+            <span class="number">04</span><div class="service-icon">+</div>
+            <h3>Pezinho</h3><p>Acabamento rápido para manter o corte sempre alinhado.</p>
+            <strong>R$ 15</strong><small>valor demonstrativo</small>
+            <button class="choose-service" data-service="Pezinho" data-price="15">Selecionar</button>
+          </article>
+          <article class="service-card">
+            <span class="number">05</span><div class="service-icon">✦</div>
+            <h3>Freestyle</h3><p>Detalhes e desenhos personalizados para destacar o corte.</p>
+            <strong>R$ 15</strong><small>valor demonstrativo</small>
+            <button class="choose-service" data-service="Freestyle" data-price="15">Selecionar</button>
+          </article>
+          <article class="service-card">
+            <span class="number">06</span><div class="service-icon">01</div>
+            <h3>Combo Black</h3><p>Corte + barba + sobrancelha em uma experiência completa.</p>
+            <strong>R$ 60</strong><small>combo demonstrativo</small>
+            <button class="choose-service" data-service="Combo Black" data-price="60">Selecionar</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="agenda">
+      <div class="container booking-wrap">
+        <div class="booking-intro">
+          <p class="eyebrow">AGENDAMENTO</p>
+          <h2>RESERVE SUA<br><span>CADEIRA.</span></h2>
+          <p>Escolha os serviços, o dia e o horário. Nesta demonstração, o agendamento é simulado no navegador.</p>
+          <div class="selected-summary">
+            <span>SELECIONADOS</span>
+            <div id="selectedServices">Nenhum serviço selecionado.</div>
+            <div class="total"><span>Total estimado</span><strong id="totalPrice">R$ 0</strong></div>
+          </div>
+        </div>
+
+        <form class="booking-form" id="bookingForm">
+          <label>Seu nome<input id="name" type="text" placeholder="Digite seu nome" required></label>
+          <label>WhatsApp<input id="phone" type="tel" placeholder="(77) 99999-9999" required></label>
+          <div class="form-row">
+            <label>Data<input id="date" type="date" required></label>
+            <label>Horário
+              <select id="time" required>
+                <option value="">Escolha</option>
+                <option>09:00</option><option>10:00</option><option>11:00</option>
+                <option>13:00</option><option>14:00</option><option>15:00</option>
+                <option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option>
+              </select>
+            </label>
+          </div>
+          <label>Observações (opcional)<textarea id="notes" rows="3" placeholder="Ex.: quero um degradê baixo..."></textarea></label>
+          <button class="btn full" type="submit">Confirmar agendamento <span>→</span></button>
+          <p class="form-note">Demonstração: nenhum dado é enviado para um servidor.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div><p class="eyebrow">FALE COM A GENTE</p><h2>VEM DE<br><span>BLACK.</span></h2></div>
+        <div class="contact-card">
+          <div><span>LOCAL</span><strong>Vitória da Conquista — BA</strong></div>
+          <div><span>HORÁRIO</span><strong>Segunda a sábado • 09h às 20h</strong></div>
+          <div><span>WHATSAPP</span><strong>(77) 99999-9999</strong></div>
+          <a class="btn" href="#agenda">Agendar agora →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><span>BLACKLINE BARBER</span><small>Site demonstrativo • Vitória da Conquista, BA</small></div></footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
