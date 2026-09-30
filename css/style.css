@@ -17,6 +17,10 @@
   margin: 0;
 }
 
+.ft{
+  display: none; /*mudar quando tiver um projeto melhor para o footer*/
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
